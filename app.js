@@ -31,7 +31,7 @@ app.post('/livres', (req, res) => {
     res.status(201).json(newLivres);
 });
 
-// 3. PUT : Modification d'un livre route : put /livres/:id
+// 3. PUT : Modification d'un livre
 app.put('/livres/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const livre = livres.find(livre => livre.id === id);
